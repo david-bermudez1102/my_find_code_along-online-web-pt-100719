@@ -12,5 +12,5 @@ def my_find(collection)
     i = i + 1
   end
 
-  new_collection
+  new_collection[0]
 end
