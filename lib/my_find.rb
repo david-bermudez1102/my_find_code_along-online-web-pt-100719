@@ -6,7 +6,7 @@ def my_find(collection)
   new_collection = []
 
   while i < collection.length do
-    yield(new_collection << collection[i])
+    new_collection << yield(collection[i])
     i = i + 1
   end
 
