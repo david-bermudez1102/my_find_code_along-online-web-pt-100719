@@ -3,11 +3,14 @@ require 'pry'
 def my_find(collection)
   i = 0
 
+  new_collection = []
+
   while i < collection.length do
     if(yield(collection[i]))
-      return collection[i]
+      new_collection << collection[i]
     end
     i = i + 1
   end
 
+  new_collection[0]
 end
